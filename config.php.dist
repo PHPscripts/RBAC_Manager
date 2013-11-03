@@ -1,0 +1,14 @@
+<?php
+// Database connection info
+define("EW_CONN_HOST", 'localhost', TRUE);      // DB Host
+define("EW_CONN_PORT", 3306, TRUE);             // DB Port
+define("EW_CONN_USER", 'DB USER', TRUE);        // DB username
+define("EW_CONN_PASS", 'PASSWORD', TRUE);       // DB Password
+define("EW_CONN_DB", 'auth', TRUE);             // Trinity Auth Database 
+
+// Security
+// Be sure to change these or else other can access this.
+define("EW_ADMIN_USER_NAME", "admin", TRUE);    // Administrator user name
+define("EW_ADMIN_PASSWORD", "CakeEater", TRUE); // Administrator password
+define("EW_USE_CUSTOM_LOGIN", TRUE, TRUE);      // Use custom login  
+?>   
