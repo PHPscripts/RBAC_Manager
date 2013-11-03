@@ -28,7 +28,7 @@ define("EW_PROJECT_ID", "{94C0E450-F9A8-47EE-A905-551040DB9277}", TRUE); // Proj
 $EW_RELATED_PROJECT_ID = "";
 $EW_RELATED_LANGUAGE_FOLDER = "";
 define("EW_RANDOM_KEY", '9SE7QlwBN5tTnjVx', TRUE); // Random key for encryption
-define("EW_PROJECT_STYLESHEET_FILENAME", "phpcss/RBAC.css", TRUE); // Project stylesheet file name
+define("EW_PROJECT_STYLESHEET_FILENAME", "css/RBAC.css", TRUE); // Project stylesheet file name
 define("EW_CHARSET", "utf-8", TRUE); // Project charset
 define("EW_EMAIL_CHARSET", EW_CHARSET, TRUE); // Email charset
 define("EW_EMAIL_KEYWORD_SEPARATOR", "", TRUE); // Email keyword separator
@@ -417,7 +417,7 @@ define("EW_MENU_ITEM_CLASSNAME", "", TRUE);
 define("EW_MENU_ITEM_LABEL_CLASSNAME", "", TRUE);
 ?>
 <?php
-define("EW_PDF_STYLESHEET_FILENAME", "phpcss/ewpdf.css", TRUE); // export PDF CSS styles
+define("EW_PDF_STYLESHEET_FILENAME", "css/ewpdf.css", TRUE); // export PDF CSS styles
 define("EW_PDF_MEMORY_LIMIT", "128M", TRUE); // Memory limit
 define("EW_PDF_TIME_LIMIT", 120, TRUE); // Time limit
 ?>

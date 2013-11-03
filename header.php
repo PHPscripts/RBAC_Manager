@@ -18,7 +18,7 @@ if (!isset($Language)) {
 <?php if (@$gsExport == "" || @$gsExport == "print") { ?>
 <link rel="stylesheet" type="text/css" href="<?php echo EW_PROJECT_STYLESHEET_FILENAME ?>">
 <?php if (ew_IsMobile()) { ?>
-<link rel="stylesheet" type="text/css" href="phpcss/ewmobile.css">
+<link rel="stylesheet" type="text/css" href="css/ewmobile.css">
 <?php } ?>
 <script type="text/javascript" src="<?php echo ew_jQueryFile("jquery-%v.min.js") ?>"></script>
 <?php if (ew_IsMobile()) { ?>

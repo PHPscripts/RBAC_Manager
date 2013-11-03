@@ -21,7 +21,7 @@ ob_start(); // Turn on output buffering
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="<?php echo ew_jQueryFile("jquery.mobile-%v.min.css") ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo EW_PROJECT_STYLESHEET_FILENAME ?>">
-<link rel="stylesheet" type="text/css" href="phpcss/ewmobile.css">
+<link rel="stylesheet" type="text/css" href="css/ewmobile.css">
 <script type="text/javascript" src="<?php echo ew_jQueryFile("jquery-%v.min.js") ?>"></script>
 <script type="text/javascript">
 	$(document).bind("mobileinit", function() {

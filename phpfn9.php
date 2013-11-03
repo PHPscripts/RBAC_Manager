@@ -4020,7 +4020,7 @@ function ew_ExtractScript(&$html, $class = "") {
 }
 
 // Include PHPMailer class
-include_once("phpmailer521/class.phpmailer.php");
+include_once("includes/phpmailer521/class.phpmailer.php");
 
 // Function to send email
 function ew_SendEmail($sFrEmail, $sToEmail, $sCcEmail, $sBccEmail, $sSubject, $sMail, $sFormat, $sCharset, $sSmtpSecure = "", $sAttachmentFileName = "", $sAttachmentContent = "", $arImages = array()) {

@@ -13,14 +13,14 @@
 		<div class="ewFooterText">&nbsp;<?php echo $Language->ProjectPhrase("FooterText") ?></div>
         <a href="https://github.com/PHPscripts/RBAC_Manager"> RBAC Project </a>
         <br>
-        <?php
+        <?php/*
         $stringfromfile = file('.git/packed-refs', FILE_USE_INCLUDE_PATH);
         $stringfromfile = $stringfromfile[1];
         $explodedstring = explode("refs", $stringfromfile);
         $branchname = $explodedstring[0];
         echo "Latest Revision: ";
         echo "<a href=https://github.com/PHPscripts/RBAC_Manager/commit/" . $branchname .">". 'https://github.com/PHPscripts/RBAC_Manager/commit/'. $branchname;
-        ?> 
+        */?> 
 		<!-- Place other links, for example, disclaimer, here -->		
 	</div>
 	<!-- footer (end) -->	
