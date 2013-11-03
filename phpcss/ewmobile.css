@@ -1,0 +1,128 @@
+/* 
+	CSS for mobile devices
+	- overriding default css file
+*/
+
+body {
+	font-size: x-small;
+}
+
+.phpmaker {
+	font-size: x-small;
+}
+
+.ewSiteTitle {
+	display: none;
+}
+
+input, textarea, select {	
+	font-size: x-small;
+}
+
+.ewLayout {
+	font-size: x-small;
+}
+
+.ewContentTable {
+	font-size: x-small;
+}
+
+.ewHeaderRow {
+	display: none;
+}
+
+.ewContentColumn {
+	padding: 5px;
+}
+
+.ewFooterText {
+	font-size: x-small;
+}
+
+.ewGridUpperPanel, .ewGridLowerPanel {
+	font-size: x-small;
+	padding: 2px;
+}
+
+.ewGridUpperPanel td, .ewGridLowerPanel td {
+	font-size: x-small;
+}
+
+.ewTable {
+	font-size: x-small;
+}
+
+.ewTable td {
+	padding: 2px;
+}
+
+.ewTableAddOpt {
+	font-size: x-small;
+}
+
+.ewTableHeaderBtn {
+	font-size: x-small;
+}
+
+.ewExportOption {
+	font-size: x-small;
+}
+
+.ewSearchOperator {
+	font-size: x-small;
+}
+
+.ewBasicSearch {
+	font-size: x-small;
+}
+
+.ewSearchOperator {
+	font-size: x-small;
+}
+
+.ewItemTable td {
+	font-size: x-small;
+	padding: 2px;
+}
+
+.ewMessage {
+	font-size: x-small;
+}
+
+.ewSuccessMessage {
+	font-size: x-small;
+}
+
+.ewWarningMessage {
+	font-size: x-small;
+}
+
+.ewErrorMessage {
+	font-size: x-small;
+}
+
+.ewRequired {
+	font-size: x-small;
+}
+
+.yui-skin-sam .yui-navset .yui-nav  {
+	font-size: x-small;
+}
+
+/* YUI Button */
+.yui-skin-sam .yui-button button, .yui-skin-sam .yui-button a {
+	font-size: x-small;
+}
+
+/* YUI Panel */
+.yui-skin-sam .yui-panel .hd {
+	font-size: x-small;
+}
+
+.yui-skin-sam .yui-ac-content ul {
+	font-size: x-small;
+}
+
+.yui-skin-sam .yui-button button, .yui-skin-sam .yui-button a {
+	font-size: x-small;
+}

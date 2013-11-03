@@ -1,0 +1,61 @@
+body {
+	background-color: inherit; /* background color */
+	font-family: DejaVuSerif; /* font name */
+	font-size: xx-small; /* font size - DO NOT CHANGE! */
+}
+
+/* table for PDF export */
+.ewTablePdf {
+	border: 0;
+	border-spacing: 0;
+	border-collapse: separate;
+	font-size: xx-small; /* font size - DO NOT CHANGE! */
+	width: 100%;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-color: #CFCFCF;  /* border color */
+
+/*	margin: auto; */
+	margin-left: 0mm;
+	margin-right: 0mm;
+}
+.ewTablePdf td {
+	padding: 3px; /* cell padding */
+	border-bottom: 0.5px solid; /* border width, horizontal grid line */
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0.5px solid; /* border width, vertical grid line */
+	border-color: #CFCFCF;  /* border color */
+
+/*	margin: auto; */
+}
+.ewTablePdf .ewTablePdfHeader, .ewTablePdf .ewTablePdfHeader td {
+	background-color: #40546A;	/* header bgcolor */
+	color: #FFFFFF; /* header font color */
+	border-bottom: 0.5px solid; /* header border width */
+	border-right: 0.5px solid; /* header border width */
+	border-color: #9F9F9F; /* header border color */	
+
+	/* background-image: url("../phpimages/professional.png"); */ /* header bg image */
+	background-repeat: repeat-x;		
+	vertical-align: top;
+}
+.ewTablePdfBorder {
+	padding: 0;	
+	border: 0.5px solid #CFCFCF; /* grid border */
+}
+
+/* row color */
+.ewTablePdf .ewTableRow, .ewTablePdf .ewTableRow td {
+	background-color: #FFFFFF;  /* alt row color 1 */
+}
+
+/* alternate row color */
+.ewTablePdf .ewTableAltRow, .ewTablePdf .ewTableAltRow td {
+	background-color: #F7F6F3; /* alt row color 2 */
+}
+
+/* main table footer */
+.ewTablePdf .ewTablePdfFooter td {
+	background-color: #EAEAEA; /* footer color */
+}

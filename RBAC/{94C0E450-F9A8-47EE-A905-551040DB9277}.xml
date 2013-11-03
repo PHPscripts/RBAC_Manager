@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<configuration date="2013/11/02" author="e.World Technology Ltd.">
+<project id="{94C0E450-F9A8-47EE-A905-551040DB9277}" file="C:\Users\Dad\Documents\PHPMaker\Projects\RBAC.pmp" name="RBAC" product="PHPMaker" version="9.2" datetime="2013/11/02 23:38:38" languagefolder="phplang" userlevel="">
+<table id="account" name="account" caption="account" userlevel="" priv="1"/>
+<table id="account_access" name="account_access" caption="account access" userlevel="" priv="1"/>
+<table id="account_banned" name="account_banned" caption="account banned" userlevel="" priv="1"/>
+<table id="autobroadcast" name="autobroadcast" caption="autobroadcast" userlevel="" priv="1"/>
+<table id="ip2nation" name="ip2nation" caption="ip 2nation" userlevel="" priv="1"/>
+<table id="ip2nationcountries" name="ip2nationcountries" caption="ip 2nationcountries" userlevel="" priv="1"/>
+<table id="ip_banned" name="ip_banned" caption="ip banned" userlevel="" priv="1"/>
+<table id="logs" name="logs" caption="logs" userlevel="" priv="1"/>
+<table id="rbac_account_permissions" name="rbac_account_permissions" caption="rbac account permissions" userlevel="" priv="1"/>
+<table id="rbac_default_permissions" name="rbac_default_permissions" caption="rbac default permissions" userlevel="" priv="1"/>
+<table id="rbac_linked_permissions" name="rbac_linked_permissions" caption="rbac linked permissions" userlevel="" priv="1"/>
+<table id="rbac_permissions" name="rbac_permissions" caption="rbac permissions" userlevel="" priv="1"/>
+<table id="realmcharacters" name="realmcharacters" caption="realmcharacters" userlevel="" priv="1"/>
+<table id="realmlist" name="realmlist" caption="realmlist" userlevel="" priv="1"/>
+<table id="uptime" name="uptime" caption="uptime" userlevel="" priv="1"/>
+<table id="GM_Logs" name="GM Logs" caption="GM Logs" userlevel="" priv="1"/>
+</project></configuration>
