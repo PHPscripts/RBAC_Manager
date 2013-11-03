@@ -1,4 +1,4 @@
-<?php require "config.php" ?>
+<?php require "configs/config.php" ?>
 <?php 
 
 /**
