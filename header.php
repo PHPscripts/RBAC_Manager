@@ -2,8 +2,8 @@
 
 // Compatibility with PHP Report Maker
 if (!isset($Language)) {
-	include_once "ewcfg9.php";
-	include_once "ewshared9.php";
+	include_once "includes/framework/ewcfg9.php";
+	include_once "includes/framework/ewshared9.php";
 	$Language = new cLanguage();
 }
 ?>
@@ -48,7 +48,7 @@ var EW_UPLOAD_ALLOWED_FILE_EXT = "gif,jpg,jpeg,bmp,png,doc,xls,pdf,zip"; // Allo
 // Ajax settings
 var EW_RECORD_DELIMITER = "\r";
 var EW_FIELD_DELIMITER = "|";
-var EW_LOOKUP_FILE_NAME = "ewlookup9.php"; // Lookup file name
+var EW_LOOKUP_FILE_NAME = "includes/framework/ewlookup9.php.php"; // Lookup file name
 var EW_AUTO_SUGGEST_MAX_ENTRIES = <?php echo EW_AUTO_SUGGEST_MAX_ENTRIES ?>; // Auto-Suggest max entries
 
 // Common JavaScript messages
@@ -60,11 +60,11 @@ var EW_IMAGE_FOLDER = "images/"; // Image folder
 </script>
 <?php } ?>
 <?php if (@$gsExport == "" || @$gsExport == "print") { ?>
-<script type="text/javascript" src="phpjs/jsrender.js"></script>
-<script type="text/javascript" src="phpjs/ewp9.js"></script>
+<script type="text/javascript" src="includes/phpjs/jsrender.js"></script>
+<script type="text/javascript" src="includes/phpjs/ewp9.js"></script>
 <?php } ?>
 <?php if (@$gsExport == "") { ?>
-<script type="text/javascript" src="phpjs/userfn9.js"></script>
+<script type="text/javascript" src="includes/phpjs/userfn9.js"></script>
 <script type="text/javascript">
 <?php echo $Language->ToJSON() ?>
 </script>
@@ -110,7 +110,7 @@ var EW_IMAGE_FOLDER = "images/"; // Image folder
 		<tr>	
 			<td class="ewMenuColumn">
 			<!-- left column (begin) -->
-<?php include_once "ewmenu.php" ?>
+<?php include_once "includes/framework/ewmenu.php" ?>
 			<!-- left column (end) -->
 			</td>
 <?php } ?>

@@ -2,8 +2,8 @@
 if (session_id() == "") session_start(); // Initialize Session data
 ob_start(); // Turn on output buffering
 ?>
-<?php include_once "ewcfg9.php" ?>
-<?php include_once "ewmysql9.php" ?>
+<?php include_once "includes/framework/ewcfg9.php" ?>
+<?php include_once "includes/framework/ewmysql9.php" ?>
 <?php include_once "phpfn9.php" ?>
 <?php include_once "accountinfo.php" ?>
 <?php include_once "userfn9.php" ?>
