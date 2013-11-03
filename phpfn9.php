@@ -562,7 +562,7 @@ class cExportPdf extends cExportBase {
 	// Export
 	function Export() {
 		global $gsExportFile;
-		include_once "dompdf060b3/dompdf_config.inc.php";
+		include_once "includes/dompdf060b3/dompdf_config.inc.php";
 		@ini_set("memory_limit", EW_PDF_MEMORY_LIMIT);
 		set_time_limit(EW_PDF_TIME_LIMIT);
 		$dompdf = new DOMPDF();
