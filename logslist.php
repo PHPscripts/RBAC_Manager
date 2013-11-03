@@ -1215,7 +1215,7 @@ var flogslistsrch = new ew_Form("flogslistsrch");
 <?php if ($Security->IsLoggedIn()) { ?>
 <?php if ($logs->Export == "" && $logs->CurrentAction == "") { ?>
 <form name="flogslistsrch" id="flogslistsrch" class="ewForm" action="<?php echo ew_CurrentPage() ?>">
-<a href="javascript:flogslistsrch.ToggleSearchPanel();" style="text-decoration: none;"><img id="flogslistsrch_SearchImage" src="phpimages/collapse.gif" alt="" width="9" height="9" style="border: 0;"></a><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("Search") ?></span><br>
+<a href="javascript:flogslistsrch.ToggleSearchPanel();" style="text-decoration: none;"><img id="flogslistsrch_SearchImage" src="images/collapse.gif" alt="" width="9" height="9" style="border: 0;"></a><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("Search") ?></span><br>
 <div id="flogslistsrch_SearchPanel">
 <input type="hidden" name="cmd" value="search">
 <input type="hidden" name="t" value="logs">
@@ -1259,7 +1259,7 @@ $logs_list->ListOptions->Render("header", "left");
 		<td><span id="elh_logs_time" class="logs_time"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $logs->time->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $logs->SortUrl($logs->time) ?>',1);"><span id="elh_logs_time" class="logs_time">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->time->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->time->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->time->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->time->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->time->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->time->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1268,7 +1268,7 @@ $logs_list->ListOptions->Render("header", "left");
 		<td><span id="elh_logs_realm" class="logs_realm"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $logs->realm->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $logs->SortUrl($logs->realm) ?>',1);"><span id="elh_logs_realm" class="logs_realm">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->realm->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->realm->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->realm->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->realm->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->realm->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->realm->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1277,7 +1277,7 @@ $logs_list->ListOptions->Render("header", "left");
 		<td><span id="elh_logs_type" class="logs_type"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $logs->type->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $logs->SortUrl($logs->type) ?>',1);"><span id="elh_logs_type" class="logs_type">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->type->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->type->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->type->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->type->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->type->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->type->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1286,7 +1286,7 @@ $logs_list->ListOptions->Render("header", "left");
 		<td><span id="elh_logs_string" class="logs_string"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $logs->string->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $logs->SortUrl($logs->string) ?>',1);"><span id="elh_logs_string" class="logs_string">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->string->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->string->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->string->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $logs->string->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($logs->string->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($logs->string->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1414,29 +1414,29 @@ if ($logs_list->Recordset)
 	<table cellspacing="0" class="ewStdTable"><tbody><tr><td><span class="phpmaker"><?php echo $Language->Phrase("Page") ?>&nbsp;</span></td>
 <!--first page button-->
 	<?php if ($logs_list->Pager->FirstButton->Enabled) { ?>
-	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->FirstButton->Start ?>"><img src="phpimages/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->FirstButton->Start ?>"><img src="images/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--previous page button-->
 	<?php if ($logs_list->Pager->PrevButton->Enabled) { ?>
-	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->PrevButton->Start ?>"><img src="phpimages/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->PrevButton->Start ?>"><img src="images/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--current page number-->
 	<td><input type="text" name="<?php echo EW_TABLE_PAGE_NO ?>" id="<?php echo EW_TABLE_PAGE_NO ?>" value="<?php echo $logs_list->Pager->CurrentPage ?>" size="4"></td>
 <!--next page button-->
 	<?php if ($logs_list->Pager->NextButton->Enabled) { ?>
-	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->NextButton->Start ?>"><img src="phpimages/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->NextButton->Start ?>"><img src="images/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--last page button-->
 	<?php if ($logs_list->Pager->LastButton->Enabled) { ?>
-	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->LastButton->Start ?>"><img src="phpimages/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $logs_list->PageUrl() ?>start=<?php echo $logs_list->Pager->LastButton->Start ?>"><img src="images/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 	<td><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("of") ?>&nbsp;<?php echo $logs_list->Pager->PageCount ?></span></td>
 	</tr></tbody></table>

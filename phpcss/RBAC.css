@@ -278,7 +278,7 @@ div.ewMenuBarVertical ul,li {
 	border-bottom: 1px solid; /* header border width */
 	border-right: 1px solid; /* header border width */
 	border-color: #9F9F9F; /* header border color */
-	background-image: url("../phpimages/professional.png"); /* header bg image */
+	background-image: url("../images/professional.png"); /* header bg image */
 	background-repeat: repeat-x;
 	vertical-align: top;
 	padding: 3px;	
@@ -517,7 +517,7 @@ div.ewMenuBarVertical ul,li {
 	font-size: x-small; /* font size */	
 }
 .ewSuccessIcon {
-	background: url("../phpimages/info.gif") no-repeat;
+	background: url("../images/info.gif") no-repeat;
 	vertical-align: top;
 	width: 16px;
 }
@@ -529,7 +529,7 @@ div.ewMenuBarVertical ul,li {
 	font-size: x-small; /* font size */
 }
 .ewWarningIcon {
-	background: url("../phpimages/warn.gif") no-repeat;
+	background: url("../images/warn.gif") no-repeat;
 	vertical-align: top;
 	width: 16px;
 }
@@ -541,7 +541,7 @@ div.ewMenuBarVertical ul,li {
 	font-size: x-small; /* font size */	
 }
 .ewErrorIcon {
-	background: url("../phpimages/error.gif") no-repeat;
+	background: url("../images/error.gif") no-repeat;
 	vertical-align: top;
 	width: 16px;
 }
@@ -585,7 +585,7 @@ div.ewMenuBarVertical ul,li {
 .yui-skin-sam .yui-navset .yui-nav a,
 .yui-skin-sam .yui-navset .yui-navset-top .yui-nav a {
 	background: #F5F5F5
-	url("../phpimages/mediumgray.png") repeat-x; /* tab background */
+	url("../images/mediumgray.png") repeat-x; /* tab background */
 	color: #000;
 	border: solid #a3a3a3; /* tab left/right border color */
 	border-width: 0 1px;
@@ -600,14 +600,14 @@ div.ewMenuBarVertical ul,li {
 .yui-skin-sam .yui-navset .yui-nav a:hover,
 .yui-skin-sam .yui-navset .yui-nav a:focus {
 	background: #F0FFFF
-	url("../phpimages/liteblue.png"); /* highlighted tab background */
+	url("../images/liteblue.png"); /* highlighted tab background */
 }
 
 .yui-skin-sam .yui-navset .yui-nav .selected a,
 .yui-skin-sam .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
 .yui-skin-sam .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
 	background: #40546A
-	url("../phpimages/professional.png"); /* selected tab background */
+	url("../images/professional.png"); /* selected tab background */
 	color: #FFFFFF;
 }
 

@@ -11,6 +11,7 @@
 	<!-- footer (begin) --><!-- *** Note: Only licensed users are allowed to remove or change the following copyright statement. *** -->
 	<div class="ewFooterRow">	
 		<div class="ewFooterText">&nbsp;<?php echo $Language->ProjectPhrase("FooterText") ?></div>
+        <a href="https://github.com/PHPscripts/RBAC_Manager"> RBAC Source </a>
 		<!-- Place other links, for example, disclaimer, here -->		
 	</div>
 	<!-- footer (end) -->	
@@ -50,7 +51,7 @@ ew_Select("table." + EW_GRID_CLASSNAME, document, ew_SetupGrid); // Init grids
 <?php } ?>
 <?php if (@$gsExport == "") { ?>
 ew_InitTooltipDiv(); // init tooltip div
-<?php } ?>
+<?php } ?> 
 </script>
 <?php if (@$gsExport == "") { ?>
 <script type="text/javascript">

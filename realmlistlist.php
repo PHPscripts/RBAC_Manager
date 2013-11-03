@@ -1370,7 +1370,7 @@ var frealmlistlistsrch = new ew_Form("frealmlistlistsrch");
 <?php if ($Security->IsLoggedIn()) { ?>
 <?php if ($realmlist->Export == "" && $realmlist->CurrentAction == "") { ?>
 <form name="frealmlistlistsrch" id="frealmlistlistsrch" class="ewForm" action="<?php echo ew_CurrentPage() ?>">
-<a href="javascript:frealmlistlistsrch.ToggleSearchPanel();" style="text-decoration: none;"><img id="frealmlistlistsrch_SearchImage" src="phpimages/collapse.gif" alt="" width="9" height="9" style="border: 0;"></a><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("Search") ?></span><br>
+<a href="javascript:frealmlistlistsrch.ToggleSearchPanel();" style="text-decoration: none;"><img id="frealmlistlistsrch_SearchImage" src="images/collapse.gif" alt="" width="9" height="9" style="border: 0;"></a><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("Search") ?></span><br>
 <div id="frealmlistlistsrch_SearchPanel">
 <input type="hidden" name="cmd" value="search">
 <input type="hidden" name="t" value="realmlist">
@@ -1415,7 +1415,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_id" class="realmlist_id"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->id->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->id) ?>',1);"><span id="elh_realmlist_id" class="realmlist_id">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->id->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->id->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->id->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->id->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->id->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->id->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1424,7 +1424,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_name" class="realmlist_name"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->name->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->name) ?>',1);"><span id="elh_realmlist_name" class="realmlist_name">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->name->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->name->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->name->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->name->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->name->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->name->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1433,7 +1433,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_address" class="realmlist_address"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->address->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->address) ?>',1);"><span id="elh_realmlist_address" class="realmlist_address">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->address->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->address->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->address->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->address->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->address->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->address->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1442,7 +1442,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_localAddress" class="realmlist_localAddress"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->localAddress->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->localAddress) ?>',1);"><span id="elh_realmlist_localAddress" class="realmlist_localAddress">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->localAddress->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->localAddress->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->localAddress->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->localAddress->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->localAddress->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->localAddress->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1451,7 +1451,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_port" class="realmlist_port"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->port->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->port) ?>',1);"><span id="elh_realmlist_port" class="realmlist_port">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->port->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->port->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->port->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->port->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->port->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->port->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1460,7 +1460,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_icon" class="realmlist_icon"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->icon->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->icon) ?>',1);"><span id="elh_realmlist_icon" class="realmlist_icon">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->icon->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->icon->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->icon->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->icon->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->icon->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->icon->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1469,7 +1469,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_timezone" class="realmlist_timezone"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->timezone->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->timezone) ?>',1);"><span id="elh_realmlist_timezone" class="realmlist_timezone">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->timezone->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->timezone->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->timezone->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->timezone->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->timezone->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->timezone->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1478,7 +1478,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_allowedSecurityLevel" class="realmlist_allowedSecurityLevel"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->allowedSecurityLevel->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->allowedSecurityLevel) ?>',1);"><span id="elh_realmlist_allowedSecurityLevel" class="realmlist_allowedSecurityLevel">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->allowedSecurityLevel->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->allowedSecurityLevel->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->allowedSecurityLevel->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->allowedSecurityLevel->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->allowedSecurityLevel->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->allowedSecurityLevel->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1487,7 +1487,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_population" class="realmlist_population"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->population->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->population) ?>',1);"><span id="elh_realmlist_population" class="realmlist_population">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->population->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->population->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->population->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->population->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->population->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->population->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1496,7 +1496,7 @@ $realmlist_list->ListOptions->Render("header", "left");
 		<td><span id="elh_realmlist_gamebuild" class="realmlist_gamebuild"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $realmlist->gamebuild->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $realmlist->SortUrl($realmlist->gamebuild) ?>',1);"><span id="elh_realmlist_gamebuild" class="realmlist_gamebuild">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->gamebuild->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->gamebuild->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->gamebuild->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $realmlist->gamebuild->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($realmlist->gamebuild->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($realmlist->gamebuild->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1660,29 +1660,29 @@ if ($realmlist_list->Recordset)
 	<table cellspacing="0" class="ewStdTable"><tbody><tr><td><span class="phpmaker"><?php echo $Language->Phrase("Page") ?>&nbsp;</span></td>
 <!--first page button-->
 	<?php if ($realmlist_list->Pager->FirstButton->Enabled) { ?>
-	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->FirstButton->Start ?>"><img src="phpimages/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->FirstButton->Start ?>"><img src="images/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--previous page button-->
 	<?php if ($realmlist_list->Pager->PrevButton->Enabled) { ?>
-	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->PrevButton->Start ?>"><img src="phpimages/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->PrevButton->Start ?>"><img src="images/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--current page number-->
 	<td><input type="text" name="<?php echo EW_TABLE_PAGE_NO ?>" id="<?php echo EW_TABLE_PAGE_NO ?>" value="<?php echo $realmlist_list->Pager->CurrentPage ?>" size="4"></td>
 <!--next page button-->
 	<?php if ($realmlist_list->Pager->NextButton->Enabled) { ?>
-	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->NextButton->Start ?>"><img src="phpimages/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->NextButton->Start ?>"><img src="images/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--last page button-->
 	<?php if ($realmlist_list->Pager->LastButton->Enabled) { ?>
-	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->LastButton->Start ?>"><img src="phpimages/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $realmlist_list->PageUrl() ?>start=<?php echo $realmlist_list->Pager->LastButton->Start ?>"><img src="images/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 	<td><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("of") ?>&nbsp;<?php echo $realmlist_list->Pager->PageCount ?></span></td>
 	</tr></tbody></table>

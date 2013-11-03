@@ -56,7 +56,7 @@ var EW_ADDOPT_BUTTON_SUBMIT_TEXT = "<?php echo ew_JsEncode2(ew_BtnCaption($Langu
 var EW_EMAIL_EXPORT_BUTTON_SUBMIT_TEXT = "<?php echo ew_JsEncode2(ew_BtnCaption($Language->Phrase("SendEmailBtn"))) ?>";
 var EW_BUTTON_CANCEL_TEXT = "<?php echo ew_JsEncode2(ew_BtnCaption($Language->Phrase("CancelBtn"))) ?>";
 var EW_DISABLE_BUTTON_ON_SUBMIT = true;
-var EW_IMAGE_FOLDER = "phpimages/"; // Image folder
+var EW_IMAGE_FOLDER = "images/"; // Image folder
 </script>
 <?php } ?>
 <?php if (@$gsExport == "" || @$gsExport == "print") { ?>
@@ -96,7 +96,8 @@ var EW_IMAGE_FOLDER = "phpimages/"; // Image folder
 <div class="ewLayout">
 <?php if (!ew_IsMobile()) { ?>
 	<!-- header (begin) --><!-- *** Note: Only licensed users are allowed to change the logo *** -->
-  <div class="ewHeaderRow"><img src="phpimages/1_trinitycore.png" alt="" style="border: 0;"></div>
+  <div class="ewHeaderRow"><img src="images/1_trinitycore.png" alt="TrinityCore" style="border: 0;">
+  </div> 
 	<!-- header (end) -->
 <?php } ?>
 <?php if (ew_IsMobile()) { ?>

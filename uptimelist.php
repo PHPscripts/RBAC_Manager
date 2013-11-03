@@ -1051,7 +1051,7 @@ $uptime_list->ListOptions->Render("header", "left");
 		<td><span id="elh_uptime_realmid" class="uptime_realmid"><table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td><?php echo $uptime->realmid->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $uptime->SortUrl($uptime->realmid) ?>',1);"><span id="elh_uptime_realmid" class="uptime_realmid">
-			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->realmid->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->realmid->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->realmid->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->realmid->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->realmid->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->realmid->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1060,7 +1060,7 @@ $uptime_list->ListOptions->Render("header", "left");
 		<td><span id="elh_uptime_starttime" class="uptime_starttime"><table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td><?php echo $uptime->starttime->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $uptime->SortUrl($uptime->starttime) ?>',1);"><span id="elh_uptime_starttime" class="uptime_starttime">
-			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->starttime->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->starttime->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->starttime->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->starttime->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->starttime->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->starttime->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1069,7 +1069,7 @@ $uptime_list->ListOptions->Render("header", "left");
 		<td><span id="elh_uptime_uptime" class="uptime_uptime"><table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td><?php echo $uptime->uptime->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $uptime->SortUrl($uptime->uptime) ?>',1);"><span id="elh_uptime_uptime" class="uptime_uptime">
-			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->uptime->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->uptime->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->uptime->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->uptime->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->uptime->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->uptime->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1078,7 +1078,7 @@ $uptime_list->ListOptions->Render("header", "left");
 		<td><span id="elh_uptime_maxplayers" class="uptime_maxplayers"><table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td><?php echo $uptime->maxplayers->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $uptime->SortUrl($uptime->maxplayers) ?>',1);"><span id="elh_uptime_maxplayers" class="uptime_maxplayers">
-			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->maxplayers->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->maxplayers->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->maxplayers->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn" style="white-space: nowrap;"><thead><tr><td class="ewTableHeaderCaption"><?php echo $uptime->maxplayers->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($uptime->maxplayers->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($uptime->maxplayers->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1206,29 +1206,29 @@ if ($uptime_list->Recordset)
 	<table cellspacing="0" class="ewStdTable"><tbody><tr><td><span class="phpmaker"><?php echo $Language->Phrase("Page") ?>&nbsp;</span></td>
 <!--first page button-->
 	<?php if ($uptime_list->Pager->FirstButton->Enabled) { ?>
-	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->FirstButton->Start ?>"><img src="phpimages/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->FirstButton->Start ?>"><img src="images/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--previous page button-->
 	<?php if ($uptime_list->Pager->PrevButton->Enabled) { ?>
-	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->PrevButton->Start ?>"><img src="phpimages/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->PrevButton->Start ?>"><img src="images/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--current page number-->
 	<td><input type="text" name="<?php echo EW_TABLE_PAGE_NO ?>" id="<?php echo EW_TABLE_PAGE_NO ?>" value="<?php echo $uptime_list->Pager->CurrentPage ?>" size="4"></td>
 <!--next page button-->
 	<?php if ($uptime_list->Pager->NextButton->Enabled) { ?>
-	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->NextButton->Start ?>"><img src="phpimages/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->NextButton->Start ?>"><img src="images/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--last page button-->
 	<?php if ($uptime_list->Pager->LastButton->Enabled) { ?>
-	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->LastButton->Start ?>"><img src="phpimages/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $uptime_list->PageUrl() ?>start=<?php echo $uptime_list->Pager->LastButton->Start ?>"><img src="images/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 	<td><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("of") ?>&nbsp;<?php echo $uptime_list->Pager->PageCount ?></span></td>
 	</tr></tbody></table>

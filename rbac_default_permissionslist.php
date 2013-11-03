@@ -1050,7 +1050,7 @@ $rbac_default_permissions_list->ListOptions->Render("header", "left");
 		<td><span id="elh_rbac_default_permissions_secId" class="rbac_default_permissions_secId"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $rbac_default_permissions->secId->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $rbac_default_permissions->SortUrl($rbac_default_permissions->secId) ?>',1);"><span id="elh_rbac_default_permissions_secId" class="rbac_default_permissions_secId">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $rbac_default_permissions->secId->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($rbac_default_permissions->secId->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($rbac_default_permissions->secId->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $rbac_default_permissions->secId->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($rbac_default_permissions->secId->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($rbac_default_permissions->secId->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1059,7 +1059,7 @@ $rbac_default_permissions_list->ListOptions->Render("header", "left");
 		<td><span id="elh_rbac_default_permissions_permissionId" class="rbac_default_permissions_permissionId"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $rbac_default_permissions->permissionId->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $rbac_default_permissions->SortUrl($rbac_default_permissions->permissionId) ?>',1);"><span id="elh_rbac_default_permissions_permissionId" class="rbac_default_permissions_permissionId">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $rbac_default_permissions->permissionId->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($rbac_default_permissions->permissionId->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($rbac_default_permissions->permissionId->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $rbac_default_permissions->permissionId->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($rbac_default_permissions->permissionId->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($rbac_default_permissions->permissionId->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1175,29 +1175,29 @@ if ($rbac_default_permissions_list->Recordset)
 	<table cellspacing="0" class="ewStdTable"><tbody><tr><td><span class="phpmaker"><?php echo $Language->Phrase("Page") ?>&nbsp;</span></td>
 <!--first page button-->
 	<?php if ($rbac_default_permissions_list->Pager->FirstButton->Enabled) { ?>
-	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->FirstButton->Start ?>"><img src="phpimages/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->FirstButton->Start ?>"><img src="images/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--previous page button-->
 	<?php if ($rbac_default_permissions_list->Pager->PrevButton->Enabled) { ?>
-	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->PrevButton->Start ?>"><img src="phpimages/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->PrevButton->Start ?>"><img src="images/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--current page number-->
 	<td><input type="text" name="<?php echo EW_TABLE_PAGE_NO ?>" id="<?php echo EW_TABLE_PAGE_NO ?>" value="<?php echo $rbac_default_permissions_list->Pager->CurrentPage ?>" size="4"></td>
 <!--next page button-->
 	<?php if ($rbac_default_permissions_list->Pager->NextButton->Enabled) { ?>
-	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->NextButton->Start ?>"><img src="phpimages/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->NextButton->Start ?>"><img src="images/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--last page button-->
 	<?php if ($rbac_default_permissions_list->Pager->LastButton->Enabled) { ?>
-	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->LastButton->Start ?>"><img src="phpimages/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $rbac_default_permissions_list->PageUrl() ?>start=<?php echo $rbac_default_permissions_list->Pager->LastButton->Start ?>"><img src="images/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 	<td><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("of") ?>&nbsp;<?php echo $rbac_default_permissions_list->Pager->PageCount ?></span></td>
 	</tr></tbody></table>

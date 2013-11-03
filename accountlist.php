@@ -1295,7 +1295,7 @@ var faccountlistsrch = new ew_Form("faccountlistsrch");
 <?php if ($Security->IsLoggedIn()) { ?>
 <?php if ($account->Export == "" && $account->CurrentAction == "") { ?>
 <form name="faccountlistsrch" id="faccountlistsrch" class="ewForm" action="<?php echo ew_CurrentPage() ?>">
-<a href="javascript:faccountlistsrch.ToggleSearchPanel();" style="text-decoration: none;"><img id="faccountlistsrch_SearchImage" src="phpimages/collapse.gif" alt="" width="9" height="9" style="border: 0;"></a><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("Search") ?></span><br>
+<a href="javascript:faccountlistsrch.ToggleSearchPanel();" style="text-decoration: none;"><img id="faccountlistsrch_SearchImage" src="images/collapse.gif" alt="" width="9" height="9" style="border: 0;"></a><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("Search") ?></span><br>
 <div id="faccountlistsrch_SearchPanel">
 <input type="hidden" name="cmd" value="search">
 <input type="hidden" name="t" value="account">
@@ -1340,7 +1340,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account_id" class="account_id"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->id->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->id) ?>',1);"><span id="elh_account_id" class="account_id">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->id->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->id->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->id->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->id->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->id->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->id->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1349,7 +1349,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account_username" class="account_username"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->username->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->username) ?>',1);"><span id="elh_account_username" class="account_username">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->username->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->username->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->username->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->username->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->username->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->username->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1358,7 +1358,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account__email" class="account__email"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->_email->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->_email) ?>',1);"><span id="elh_account__email" class="account__email">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->_email->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->_email->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->_email->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->_email->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->_email->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->_email->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1367,7 +1367,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account_reg_mail" class="account_reg_mail"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->reg_mail->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->reg_mail) ?>',1);"><span id="elh_account_reg_mail" class="account_reg_mail">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->reg_mail->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->reg_mail->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->reg_mail->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->reg_mail->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->reg_mail->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->reg_mail->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1376,7 +1376,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account_joindate" class="account_joindate"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->joindate->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->joindate) ?>',1);"><span id="elh_account_joindate" class="account_joindate">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->joindate->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->joindate->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->joindate->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->joindate->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->joindate->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->joindate->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1385,7 +1385,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account_last_ip" class="account_last_ip"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->last_ip->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->last_ip) ?>',1);"><span id="elh_account_last_ip" class="account_last_ip">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->last_ip->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->last_ip->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->last_ip->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->last_ip->FldCaption() ?><?php echo $Language->Phrase("SrchLegend") ?></td><td class="ewTableHeaderSort"><?php if ($account->last_ip->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->last_ip->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1394,7 +1394,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account_online" class="account_online"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->online->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->online) ?>',1);"><span id="elh_account_online" class="account_online">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->online->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->online->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->online->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->online->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->online->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->online->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1403,7 +1403,7 @@ $account_list->ListOptions->Render("header", "left");
 		<td><span id="elh_account_expansion" class="account_expansion"><table class="ewTableHeaderBtn"><thead><tr><td><?php echo $account->expansion->FldCaption() ?></td></tr></thead></table></span></td>
 	<?php } else { ?>
 		<td><div onmousedown="ew_Sort(event,'<?php echo $account->SortUrl($account->expansion) ?>',1);"><span id="elh_account_expansion" class="account_expansion">
-			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->expansion->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->expansion->getSort() == "ASC") { ?><img src="phpimages/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->expansion->getSort() == "DESC") { ?><img src="phpimages/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
+			<table class="ewTableHeaderBtn"><thead><tr><td class="ewTableHeaderCaption"><?php echo $account->expansion->FldCaption() ?></td><td class="ewTableHeaderSort"><?php if ($account->expansion->getSort() == "ASC") { ?><img src="images/sortup.gif" width="10" height="9" alt="" style="border: 0;"><?php } elseif ($account->expansion->getSort() == "DESC") { ?><img src="images/sortdown.gif" width="10" height="9" alt="" style="border: 0;"><?php } ?></td></tr></thead></table>
 		</span></div></td>		
 	<?php } ?>
 <?php } ?>		
@@ -1555,29 +1555,29 @@ if ($account_list->Recordset)
 	<table cellspacing="0" class="ewStdTable"><tbody><tr><td><span class="phpmaker"><?php echo $Language->Phrase("Page") ?>&nbsp;</span></td>
 <!--first page button-->
 	<?php if ($account_list->Pager->FirstButton->Enabled) { ?>
-	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->FirstButton->Start ?>"><img src="phpimages/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->FirstButton->Start ?>"><img src="images/first.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/firstdisab.gif" alt="<?php echo $Language->Phrase("PagerFirst") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--previous page button-->
 	<?php if ($account_list->Pager->PrevButton->Enabled) { ?>
-	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->PrevButton->Start ?>"><img src="phpimages/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
+	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->PrevButton->Start ?>"><img src="images/prev.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></a></td>
 	<?php } else { ?>
-	<td><img src="phpimages/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/prevdisab.gif" alt="<?php echo $Language->Phrase("PagerPrevious") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--current page number-->
 	<td><input type="text" name="<?php echo EW_TABLE_PAGE_NO ?>" id="<?php echo EW_TABLE_PAGE_NO ?>" value="<?php echo $account_list->Pager->CurrentPage ?>" size="4"></td>
 <!--next page button-->
 	<?php if ($account_list->Pager->NextButton->Enabled) { ?>
-	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->NextButton->Start ?>"><img src="phpimages/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->NextButton->Start ?>"><img src="images/next.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/nextdisab.gif" alt="<?php echo $Language->Phrase("PagerNext") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 <!--last page button-->
 	<?php if ($account_list->Pager->LastButton->Enabled) { ?>
-	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->LastButton->Start ?>"><img src="phpimages/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
+	<td><a href="<?php echo $account_list->PageUrl() ?>start=<?php echo $account_list->Pager->LastButton->Start ?>"><img src="images/last.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></a></td>	
 	<?php } else { ?>
-	<td><img src="phpimages/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
+	<td><img src="images/lastdisab.gif" alt="<?php echo $Language->Phrase("PagerLast") ?>" width="16" height="16" style="border: 0;"></td>
 	<?php } ?>
 	<td><span class="phpmaker">&nbsp;<?php echo $Language->Phrase("of") ?>&nbsp;<?php echo $account_list->Pager->PageCount ?></span></td>
 	</tr></tbody></table>
